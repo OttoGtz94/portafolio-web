@@ -1,0 +1,28 @@
+footer {
+	//position: fixed;
+	bottom: 0;
+	background: rgba($colorNav,1);
+	width: 100%;
+	text-align: center;
+	z-index: 2;
+	height: 72px;
+	//color: $colorFont;
+	padding-top: 10px;
+	.main {
+		.copyright {
+			div {
+				h3 {
+					font-size: 12px;
+					margin-top: 10px;
+					color: #9CA1BA;
+					font-weight: 300;
+				}
+			}
+		}	
+	}
+	.extras {
+		display: none;
+	}
+
+}
+

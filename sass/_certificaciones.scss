@@ -1,0 +1,53 @@
+.certificate-body {
+    background: #E6E6E6;
+}
+
+.contenedor-header {
+    width: 100%;
+    display: inline-block;
+    .contenedor-logo {
+        .logo {
+            a {
+                img {
+                    margin: 15px;
+                    height: 100px;
+                    border-radius: 5px;
+                }
+            }
+            a:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .contenedor-titulo {
+        text-align: center;
+        margin-bottom: 50px;
+        h3 {
+            font-size: 40px;
+        }
+    }
+}
+
+.main {
+    .row {
+        margin-bottom: 30px;
+        .certificacion {
+            .card {
+                background: #E6E6E6;
+                ul {
+                    li {
+                        background: #E6E6E6;
+                    }
+                }
+                .card-body {
+                    .card-text {
+                        text-align: justify;
+                        height: 220px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

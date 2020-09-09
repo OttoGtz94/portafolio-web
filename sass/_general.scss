@@ -1,0 +1,22 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	//font-family: 'Merriweather', serif;
+	//font-family: 'Source Code Pro', monospace;
+	font-family: 'Encode Sans Condensed', sans-serif;
+	color: $colorFont;
+}
+
+body {
+	//background: $negroPrincipal;
+	//background: url('../img/fondo_dark_code.jpg');
+
+	/*background-repeat: no-repeat;
+	background-attachment: fixed;
+	//overflow: hidden;
+	overflow: scroll;*/
+	background: $colorBlancoPrincipal;
+
+
+}

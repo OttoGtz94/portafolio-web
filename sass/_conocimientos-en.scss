@@ -1,0 +1,38 @@
+.main {
+    .conocimientos {
+        margin-top: 200px;
+
+        .contenedor-titulo {
+            div {
+                h2 {
+                    margin: 35px 15px;
+                    font-size: 50px;
+                    color: $colorTitulo;
+
+                    //overflow: hidden;
+                    /* Ensures the content is not revealed until the animation */
+                    //border-right: 3px solid $colorTitulo;
+                    /* The typwriter cursor */
+                   // white-space: nowrap;
+                    /* Keeps the content on a single line */
+                    //margin: 0 auto;
+                    /* Gives that scrolling effect as the typing happens */
+                    //letter-spacing: 10px;
+                    /* Adjust as needed */
+                    //animation: typing 3s steps(30, end), blink-caret .5s step-end infinite;
+                }
+            }
+        }
+    }
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: $colorTitulo}
+}

@@ -1,0 +1,126 @@
+.nav-bar-left {
+    width: 5.5%;
+    //height: 700px;
+    height: 100%;
+    position: fixed;
+
+    top: 0;
+    z-index: 3;
+    min-height: 500px;
+    background: rgba($colorNav, 1); 
+    float: left;
+    display: flex;
+    align-items: flex-center;
+    flex-wrap: wrap;
+
+    .logo {
+        img {
+            width: 100%;
+            //margin-bottom: 250px;
+        }
+    }
+
+    .nav-bar-icons {
+        //background: white;
+        display: block;
+		position: absolute;
+		top: 20%;
+        //flex-wrap: wrap;
+        //align-items: flex-center;
+        a {
+            width: 100%;
+            //height: auto;
+            text-align: center;
+
+            i {
+                width: 100%;
+                //height: 28px;
+                padding: 0;
+                font-size: $tamanioIconos;
+                margin-top: 0px;
+                //background: white;
+                margin-top: 30px;
+                color: $colorFont;
+                padding: 10px;
+                border-radius: 1px;	
+                transition: all 0.9s ease;
+            }
+            .facebook:hover {
+            	background: #3b5998;
+            	color: #fff;
+            }
+            .instagram:hover {
+            	background: #833ab4;
+            	color: #fff;
+            }
+            .youtube:hover {
+            	background: #ff0000;
+            	color: #fff;
+            }
+            .gitHub:hover {
+            	background: #c9510c;
+            	color: #fff;
+            }
+            .linkedin:hover {
+            	background: #0077b5;
+            	color: #fff;
+            }
+
+
+        }
+        
+    }
+}
+
+.nav-bar-right {
+    width: 5%;
+    //height: 700px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    min-height: 500px;
+    background: rgba($colorNav, 1); 
+    //float: right;
+    //padding: 5px;
+
+    //display: flex;
+    /*align-items: flex-center;
+	flex-wrap: wrap;*/
+    //justify-content: flex-center;
+    .nav-bar-icons {
+        //background: white;
+        display: block;
+		position: absolute;
+		top: 10%;
+        //flex-wrap: wrap;
+        //align-items: flex-center;
+        a {
+            width: 100%;
+            //height: auto;
+            text-align: center;
+
+            i {
+                width: 100%;
+                //height: 28px;
+                padding: 0;
+                font-size: $tamanioIconos;
+                margin-top: 0px;
+                //background: white;
+                margin-top: 30px;
+                color: $colorFont;
+                padding: 10px;
+                transition: all 0.9s ease;
+            }
+            i:hover {
+            	//background: #394459;
+                background: $colorFondoTexto;
+            	color: #fff;
+            }
+            .nav-extras {
+            	font-size: 20px;
+            }
+        }
+    }
+}

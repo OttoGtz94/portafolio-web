@@ -1,0 +1,123 @@
+.slider {
+	background: white;
+    height: 220px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    //width: 1140px; 
+    border: 4px solid rgba(82,82,85,0.5);
+    margin-bottom: 10px;
+    .slide-track {
+    	animation: scroll 10s infinite;
+    	animation-direction: alternate;
+    	display: flex;
+    	width: calc(250px * 18);
+
+    	.slide {
+    		background: $colorBlancoPrincipal;
+    		filter: grayscale(70%);
+            img {
+                height: 220px;
+            }
+    	}
+    	.slide:hover {
+    		//-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+   			filter: grayscale(0%);
+    	}
+    }
+    .slide-track:hover {
+    	animation-play-state: paused;
+    }
+}
+.slider::before, .slider::after {
+    background: linear-gradient(to right, #fff 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100px;
+    z-index: 2;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider .slide {
+	height: 250px;
+	width: 250px;
+}
+/*---------------Slider2------------------*/
+.slider2 {
+	background: white;
+    height: 220px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    border: 4px solid rgba(82,82,85,0.5);
+    margin-bottom: 10px;
+	.slide-track {
+		animation: scroll 10s infinite;
+		animation-direction: alternate-reverse;
+		display: flex;
+    	width: calc(250px * 18);
+    	.slide {
+    		background: $colorBlancoPrincipal;
+    		filter: grayscale(70%);
+            img {
+                height: 220px;
+            }
+    	}
+    	.slide:hover {
+    		//-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+   			filter: grayscale(0%);
+    	}
+	}
+	.slide-track:hover {
+    	animation-play-state: paused;
+    }
+}
+
+.slider2::before, .slider2::after {
+    background: linear-gradient(to right, #fff 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100px;
+    z-index: 2;
+}
+
+.slider2::after {
+    right: 0;
+    top: 0;
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+}
+
+.slider2::before {
+    left: 0;
+    top: 0;
+}
+
+.slider2 .slide {
+	height: 250px;
+	width: 250px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 9));
+    }
+}
